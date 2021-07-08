@@ -61,8 +61,9 @@ class NavBlogList extends PureComponent {
     this.props.setMainBlog(blogData);
   }
   toggleActive(index) {
-    // eslint-disable-next-line react/no-direct-mutation-state
-    this.state.topics[index].active ^= true;
+    let newtopics = this.state.topics;
+    newtopics[index].active ^= true;
+    this.setState({ topics: newtopics });
     this.forceUpdate();
   }
   dropDownFlag(index) {

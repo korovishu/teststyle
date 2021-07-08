@@ -13,7 +13,6 @@ import { useAuth } from '../lib/auth';
 
 function App({ bid }) {
   const auth = useAuth();
-
   const [blog, setCurrentBlog] = useState(defaultblog.blogData);
   const [id, setId] = useState('0');
   const [shownav, setShownav] = useState(true);

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Input, SIZE } from 'baseui/input';
-import { IoIosSearch } from 'react-icons/io';
+import { IoIosSearch } from "react-icons/io";
 
 function SearchBar(props) {
   function handleFilterTextChange(e) {
@@ -12,11 +12,7 @@ function SearchBar(props) {
     <React.Fragment>
       <Input
         value={props.filterText}
-        startEnhancer={
-          <span className="text-2xl text-gray-500 ">
-            <IoIosSearch />
-          </span>
-        }
+        startEnhancer={<span className='text-2xl text-gray-500 '><IoIosSearch/></span>}
         placeholder="Search Blog..."
         onChange={handleFilterTextChange}
         clearable
@@ -35,14 +31,14 @@ function SearchBar(props) {
             },
           },
           InputContainer: {
-            style: () => ({ backgroundColor: 'white' }),
+          style: () => ({ backgroundColor: "white"})
           },
           StartEnhancer: {
-            style: () => ({ backgroundColor: 'white' }),
+          style: () => ({backgroundColor: "white"})
           },
           ClearIcon: {
-            style: () => ({ color: '#757575', backgroundColor: 'white' }),
-          },
+            style: () => ({ color: '#757575', backgroundColor: 'white'})
+          }
         }}
       />
     </React.Fragment>
