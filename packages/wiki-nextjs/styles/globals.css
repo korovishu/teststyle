@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  display: flex;
+}
+
+/* .main {
+  flex: 3;
+} */
+
+.nav-topic {
+  font-size: x-large;
+}
+
+.nav-blog {
+  cursor: pointer;
+  font-size: large;
+  padding-left: 30px;
+}
+
+.nav-item {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.nav-expand {
+  font-size: x-large;
+  border-color: black;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 'all 1s ease-in';
+  /* display: none; */
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: 'all 1s ease-in';
+}
+
+.flex-div {
+  display: flex;
+}
+
+.large-text {
+  font-size: xx-large;
+}
+
+.float-right {
+  text-align: right;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 120px; */
+  background-color: black;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.navbar-main .nav-item:hover,
+.nav-blog:hover {
+  background-color: rgb(209, 199, 199);
+}
+
+.vh-max {
+  height: 90vh;
+  vertical-align: text-top;
+}
+
+.formField {
+  margin: 10px;
+}
+
+.formField .formLabel {
+  color: green;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+}
+
+.Header {
+  color: red;
+}
+
+.search-result-item:first-child {
+  border: 'none';
+}
