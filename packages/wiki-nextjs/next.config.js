@@ -1,2 +1,3 @@
-const withTM = require('next-transpile-modules')(['editor']);
-module.exports = withTM();
+module.exports = {
+  reactStrictMode: true,
+};
